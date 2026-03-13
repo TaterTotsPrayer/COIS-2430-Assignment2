@@ -1,1 +1,46 @@
 @import url("reset.css");
+
+#table{
+    font-family: "Poiret One", sans-serif;
+}
+#table table{
+    width: 100%;
+    border-collapse: seperate;
+}
+#table caption{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#table thead th{
+    background: #51344d;
+    color: white;
+    padding: 0.6rem;
+}
+#table tbody th{
+    background: #755c75;
+    color: white;
+    padding: 0.6rem;
+    text-align: left;
+}
+#table{
+    text-align:center;
+    padding:0.6rem;
+}
+#table tbody tr:nth-child(odd) td{
+    background: #d0c3d0;;
+}
+#table tbody tr:nth-child(even) td{
+    background: #aa98aa;
+}
+#table tbody tr:last-child td, 
+#table tbody tr:last-child th{
+    background: #8c93a8;
+    color: white;
+}
+
+.fa-check{
+    color:green;
+}
+.fa-xmark{
+    color:firebrick;
+}
