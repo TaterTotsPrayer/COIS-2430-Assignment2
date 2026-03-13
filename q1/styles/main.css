@@ -91,3 +91,16 @@
     padding:0.4rem 0.8rem;
     border:none;
 }
+.search-box{/*container for search input and icon*/
+    position: relative;
+}
+.search-box i{/*positions search icon inside input field*/
+    position:absolute;
+    left:0.4rem;
+    top:50%;
+    transform: translateY(-50%);
+    color:white;
+}
+.search-box input{/*removes overlap*/
+    padding-left: 1.5rem;
+}
