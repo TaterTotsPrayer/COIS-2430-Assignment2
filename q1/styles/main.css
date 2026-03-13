@@ -1,46 +1,93 @@
 @import url("reset.css");
 
+/*TABLE*/
+
 #table{
-    font-family: "Poiret One", sans-serif;
+    font-family: "Poiret One", sans-serif;/*uses poiret one font for table*/
 }
-#table table{
+#table table{/*styling for main table element*/
     width: 100%;
     border-collapse: seperate;
 }
-#table caption{
+#table caption{/*styling for table title*/
     font-weight: bold;
     margin-bottom: 1rem;
 }
-#table thead th{
+#table thead th{/*styling for header row*/
     background: #51344d;
     color: white;
     padding: 0.6rem;
 }
-#table tbody th{
+#table tbody th{/*styling for first column nmaes*/
     background: #755c75;
     color: white;
     padding: 0.6rem;
     text-align: left;
 }
-#table{
+#table td{/*styling for standard table data cells*/
     text-align:center;
     padding:0.6rem;
-}
+}/*alternate row coloring */
 #table tbody tr:nth-child(odd) td{
     background: #d0c3d0;;
-}
+}/*alternate row coloring */
 #table tbody tr:nth-child(even) td{
     background: #aa98aa;
-}
+}/*changing the background of the price row*/
 #table tbody tr:last-child td, 
 #table tbody tr:last-child th{
     background: #8c93a8;
     color: white;
 }
 
-.fa-check{
+.fa-check{/*green checkmark*/
     color:green;
 }
-.fa-xmark{
+.fa-xmark{/*red X*/
     color:firebrick;
+}
+/*NAVIGATION*/
+
+#navigation nav{/*main navigation container*/
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    background: rebeccapurple;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+#navigation nav i {/*broom ball*/
+    color: white;
+    font-size: 1.5rem;
+}
+#navigation ul{/*nav menu list*/
+    display: flex;
+    gap: 2rem;
+}
+#navigation a{/*removes underline from links*/
+    text-decoration: none;
+}
+#navigation a:link{/*unvisited state for links*/
+    color: #ccff66;
+}
+#navigation a:visited{/*visited state for links*/
+    color: #ff6666;
+}
+#navigation a:hover{/*hover state for links*/
+    color:white;
+}
+
+#navigation form{/*search form container*/
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#navigation input{/*search input box*/
+    padding: 0.4rem;
+    border: none;
+    background: #2ec4b6;
+}
+#navigation button{/*search button*/
+    padding:0.4rem 0.8rem;
+    border:none;
 }
