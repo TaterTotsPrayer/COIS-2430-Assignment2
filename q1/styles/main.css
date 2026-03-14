@@ -5,31 +5,60 @@
 #table{
     font-family: "Poiret One", sans-serif;/*uses poiret one font for table*/
 }
+#table h2{
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+#table .empty{
+    background: transparent;
+    padding: 0;
+    display:none;
+}
+#navigation h2{
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+/*#table td, table th{
+    border-radius:0.4rem;
+}*/
 #table table{/*styling for main table element*/
-    width: 100%;
-    border-collapse: separate;
+    width: 50%;
+    margin:0 auto;
+    border-spacing: 0.5rem;
 }
 #table caption{/*styling for table title*/
     font-weight: bold;
     margin-bottom: 1rem;
 }
+/*#table thead th:first-child{
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+}
+#table thead th:last-child{
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+}*/
 #table thead th{/*styling for header row*/
     background: #51344d;
     color: white;
     padding: 0.6rem;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
 }
 #table tbody th{/*styling for first column nmaes*/
     background: #755c75;
     color: white;
     padding: 0.6rem;
     text-align: left;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
 }
 #table td{/*styling for standard table data cells*/
     text-align:center;
     padding:0.6rem;
 }/*alternate row coloring */
 #table tbody tr:nth-child(odd) td{
-    background: #d0c3d0;;
+    background: #d0c3d0;
 }/*alternate row coloring */
 #table tbody tr:nth-child(even) td{
     background: #aa98aa;
@@ -51,7 +80,7 @@
 #navigation nav{/*main navigation container*/
     display:flex;
     align-items: center;
-    justify-content:space-between;
+    gap:2rem;
     background: rebeccapurple;
     padding: 1rem;
     font-family: "Roboto", sans-serif;
@@ -63,6 +92,9 @@
 #navigation ul{/*nav menu list*/
     display: flex;
     gap: 2rem;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
 #navigation a{/*removes underline from links*/
     text-decoration: none;
@@ -78,6 +110,7 @@
 }
 
 #navigation form{/*search form container*/
+    margin-left: auto;
     display:flex;
     align-items: center;
     gap: 0.5rem;
@@ -90,6 +123,8 @@
 #navigation button{/*search button*/
     padding:0.4rem 0.8rem;
     border:none;
+    border-radius: 1rem;
+    cursor: pointer;
 }
 .search-box{/*container for search input and icon*/
     position: relative;
@@ -108,15 +143,16 @@
 /*Login Form*/
 #login h2{/*fixes title position*/
     position:absolute;
-    top:27rem;
-    left:1rem;
+    top:33rem;
+    left: 2rem;
     font-size: 2rem;
     color:#424141;
-    margin:0;
 }
 #login{/*background gradient*/
-    min-height: 100vh;
+    min-height: 60vh;
+    padding:2rem;
     background: linear-gradient(45deg, #00dbde, #fc00ff);
+    border: 1rem solid #fff;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -132,10 +168,11 @@
     background: white;
     padding: 2rem;
     border-radius: 0.5rem;
-    width: 20rem;
+    width: 30rem;
+    min-height: 40rem;
     display:flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-between;
 }
 .login-container form{/*login form layout*/
     display:flex;
